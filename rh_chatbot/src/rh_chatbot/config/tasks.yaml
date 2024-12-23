@@ -1,0 +1,18 @@
+cv_matcher_task:
+  description: >
+    Compare the provided CV against the job description and return a score out of 10
+    based on how well the CV matches the job requirements.
+  expected_output: >
+    A score from 1 to 10 indicating how well the CV matches the job description.
+  agent: cv_matcher
+
+cv_improver_task:
+  description: >
+    Provide 2–3 suggestions to improve the CV, based on the job description.
+  expected_output: >
+    A list of 2–3 suggestions for improving the CV, such as:
+    - Add more action verbs like 'led' or 'managed' to your experience section.
+    - Include a Skills section to match the job requirements.
+    - Use specific examples, like 'Increased sales by 20%'
+  agent: cv_improver
+
